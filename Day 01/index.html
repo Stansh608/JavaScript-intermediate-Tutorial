@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate Javascript</title>
+</head>
+<body>
+
+    <form action="" name="myform" method="POST"
+    onsubmit="return validateForm()">
+   Name: <input type="text" name="fname">
+   <input type="submit" value="submit">
+   </form>
+
+   <!--automatic validation using "required"-->
+   <form action="" name="myform1" method="POST">
+  Name: <input type="text" name="fname" required>
+  <input type="submit" value="submit">
+  </form>
+  <br>
+
+  <!--check validity using checkValidity() fxn-->
+  <form action="" name="myform1" method="POST">
+    Name: <input type="number" name="fname" id="id01" min=100 max=300>
+    <p id="demo"></p>
+    <input type="button" value="submit" onclick="validCheck()">
+    </form>
+    <!--check validity using setCustomValidity() fxn-->
+    <form action="" name="myform1" method="POST">
+      Name: <input type="number" name="fname" id="id01" min=100 max=300>
+      <p id="demo"></p>
+      <input type="button" value="submit" onclick="validCheck()">
+    </form>
+
+
+<script src="main.js"></script>    
+</body>
+</html>
